@@ -4,9 +4,10 @@ from CargarArchivo import ArchivoCarga
 
 
 def cargar_archivo():
-    ruta = filedialog.askopenfilename(filetypes=(("txt files", "*.txt"), ("all files", "*.*")))
-    Tk().withdraw()
-    file = open(ruta, "r", encoding='utf-8')
+    #ruta = filedialog.askopenfilename(filetypes=(("txt files", "*.txt"), ("all files", "*.*")))
+    #Tk().withdraw()
+    #file = open(ruta, "r", encoding='utf-8')
+    file = open('C:/Users/Erick Mayorga/Desktop/LFP-Proyecto1-201901758/input2.txt','r', encoding='utf-8')
     print(file)
     info = file.read()
 
