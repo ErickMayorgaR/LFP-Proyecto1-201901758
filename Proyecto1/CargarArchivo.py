@@ -14,7 +14,8 @@ class ArchivoCarga:
     estaciones = []
 
     def mejorRuta(self):
-        self.un_nuevo_mapa.calcularMejorRuta()
+        self.un_nuevo_mapa.calcularMejorRuta(self.nombre_mapa,self.rutas,self.estaciones)
+
     def unMapa(self):
         self.un_nuevo_mapa.ordenar(self.nombre_mapa,self.rutas,self.estaciones)
 

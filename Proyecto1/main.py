@@ -4,10 +4,10 @@ from CargarArchivo import ArchivoCarga
 
 ir_seleccion = ArchivoCarga()
 def cargar_archivo():
-    #ruta = filedialog.askopenfilename(filetypes=(("txt files", "*.txt"), ("all files", "*.*")))
-    #Tk().withdraw()
-    #file = open(ruta, "r", encoding='utf-8')
-    file = open('C:/Users/Erick Mayorga/Desktop/LFP-Proyecto1-201901758/input2.txt','r', encoding='utf-8')
+    ruta = filedialog.askopenfilename(filetypes=(("txt files", "*.txt"), ("all files", "*.*")))
+    Tk().withdraw()
+    file = open(ruta, "r", encoding='utf-8')
+    #file = open('C:/Users/Erick Mayorga/Desktop/LFP-Proyecto1-201901758/input2.txt','r', encoding='utf-8')
     print(file)
     info = file.read()
 
@@ -16,6 +16,7 @@ def cargar_archivo():
 
 def graficar_ruta():
     print("algo")
+    ir_seleccion.mejorRuta()
 
 
 def graficar_mapa():
@@ -39,6 +40,8 @@ def main_menu():
         opcion = int(input())
         if opcion == 1:
             cargar_archivo()
+        if opcion == 2:
+            graficar_ruta()
         if opcion == 3:
             graficar_mapa()
         else:

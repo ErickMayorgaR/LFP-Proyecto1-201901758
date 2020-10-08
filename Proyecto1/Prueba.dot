@@ -1,25 +1,38 @@
 digraph D {
 rankdir= LR
-FUEGO[label = "FUEGO
+fuego[label = "FUEGO
 disponible"  style=filled fillcolor= "#fad9d5"]
-HIERBA[label = "HIERBA
+hierba[label = "HIERBA
 disponible"  style=filled fillcolor= "#b0e3e6"]
-AGUA[label = "AGUA
+agua[label = "AGUA
 disponible"  style=filled fillcolor= "#b1ddf0"]
-estacion_X2[label = "estacion_X2
+agua[label = "AGUA
+disponible"  style=filled fillcolor= "#b1ddf0"]
+fuego[label = "FUEGO
+disponible"  style=filled fillcolor= "#fad9d5"]
+hierba[label = "HIERBA
+disponible"  style=filled fillcolor= "#b0e3e6"]
+agua[label = "AGUA
+disponible"  style=filled fillcolor= "#b1ddf0"]
+estacion_x2[label = "estacion_X2
 cerrada " style=filled fillcolor= "#dae8fc"]
-estacion_X[label = "estacion_X
+estacion_x[label = "estacion_X
 disponible"  style=filled fillcolor= "#dae8fc"]
-FUEGO->HIERBA[label ="rutaX1
+fuego->hierba[label ="rutaX1
+1.0" style = bold ]
+hierba->agua[label ="rutaZ2
+6.21" style = bold  ]
+fuego->hierba[label ="rutaX1
 1.0 "]
-HIERBA->FUEGO[label ="rutaX2
+hierba->fuego[label ="rutaX2
 6 "]
-HIERBA->AGUA[label ="rutaZ2
+hierba->agua[label ="rutaZ2
 6.21 "]
-AGUA->HIERBA[label ="rutaZ1
+agua->hierba[label ="rutaZ1
 8 "]
-AGUA->FUEGO[label ="rutaY2
+agua->fuego[label ="rutaY2
 2 "]
-FUEGO->AGUA[label ="rutaY1
+fuego->agua[label ="rutaY1
 8 "]
-label = "TR1F0RC3" ;}
+label = "TR1F0RC3" ;
+}
