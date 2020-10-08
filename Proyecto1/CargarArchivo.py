@@ -1,19 +1,28 @@
 import re
 from RutaObj import *
 from EstacionObj import *
+from CargarMapa import *
 import os
 
 
 class ArchivoCarga:
+    un_nuevo_mapa = CargarMapa()
     nombre_mapa = ""
     errores = [[]]
     tokens = [[]]
     rutas = []
     estaciones = []
 
+    def mejorRuta(self):
+        self.un_nuevo_mapa.calcularMejorRuta()
+    def unMapa(self):
+        self.un_nuevo_mapa.ordenar(self.nombre_mapa,self.rutas,self.estaciones)
+
+
     def una_rutaObj(self, nombre, peso, inicio, fin):
         objeto_nuevo = RutaObj(nombre, peso, inicio, fin)
         self.rutas.append(objeto_nuevo)
+
     def una_estacionObj(self, nombre, estado, color):
         objeto_nuevo = EstacionObj(nombre, estado, color)
         self.estaciones.append(objeto_nuevo)

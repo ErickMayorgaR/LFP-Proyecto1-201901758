@@ -2,7 +2,7 @@ from tkinter import Tk
 from tkinter import filedialog
 from CargarArchivo import ArchivoCarga
 
-
+ir_seleccion = ArchivoCarga()
 def cargar_archivo():
     #ruta = filedialog.askopenfilename(filetypes=(("txt files", "*.txt"), ("all files", "*.*")))
     #Tk().withdraw()
@@ -11,7 +11,7 @@ def cargar_archivo():
     print(file)
     info = file.read()
 
-    ir_seleccion = ArchivoCarga()
+    #ir_seleccion = ArchivoCarga()
     ir_seleccion.analisis(info)
 
 def graficar_ruta():
@@ -20,7 +20,7 @@ def graficar_ruta():
 
 def graficar_mapa():
     print("algo")
-
+    ir_seleccion.unMapa()
 
 def opciones():
     print("\n")
@@ -39,6 +39,8 @@ def main_menu():
         opcion = int(input())
         if opcion == 1:
             cargar_archivo()
+        if opcion == 3:
+            graficar_mapa()
         else:
             print("Algo")
 

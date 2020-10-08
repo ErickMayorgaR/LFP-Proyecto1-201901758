@@ -1,0 +1,25 @@
+digraph D {
+rankdir= LR
+FUEGO[label = "FUEGO
+disponible"  style=filled fillcolor= "#fad9d5"]
+HIERBA[label = "HIERBA
+disponible"  style=filled fillcolor= "#b0e3e6"]
+AGUA[label = "AGUA
+disponible"  style=filled fillcolor= "#b1ddf0"]
+estacion_X2[label = "estacion_X2
+cerrada " style=filled fillcolor= "#dae8fc"]
+estacion_X[label = "estacion_X
+disponible"  style=filled fillcolor= "#dae8fc"]
+FUEGO->HIERBA[label ="rutaX1
+1.0 "]
+HIERBA->FUEGO[label ="rutaX2
+6 "]
+HIERBA->AGUA[label ="rutaZ2
+6.21 "]
+AGUA->HIERBA[label ="rutaZ1
+8 "]
+AGUA->FUEGO[label ="rutaY2
+2 "]
+FUEGO->AGUA[label ="rutaY1
+8 "]
+label = "TR1F0RC3" ;}
